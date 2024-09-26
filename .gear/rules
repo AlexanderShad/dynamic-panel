@@ -1,2 +1,2 @@
-tar: .
+tar: . name=dynamic-panel-@version@ base=.
 spec: .gear/dynamic-panel.spec
