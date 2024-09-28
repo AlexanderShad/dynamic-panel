@@ -2,7 +2,7 @@
 %define nameU dynamic-panel
 
 Name: gnome-shell-extension-dynamic-panel
-Version: 3.3
+Version: 3.5
 Release: alt1
 
 Summary: Dynamic top panel
@@ -37,6 +37,6 @@ cp %_builddir/%nameU-%version/prefs.js %buildroot%_datadir/gnome-shell/extension
 %doc *.md
 
 %changelog
-* Thu Sep 26 2024 Aleksander Shamaraev <shad@altlinux.ru> 3.3-alt1
+* Sat Sep 28 2024 Aleksander Shamaraev <shad@altlinux.ru> 3.5-alt1
 - Initial build for Sisyphus
 
