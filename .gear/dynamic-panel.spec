@@ -2,14 +2,14 @@
 %define nameU dynamic-panel
 
 Name: gnome-shell-extension-dynamic-panel
-Version: 3.5
+Version: 4.0
 Release: alt1
 
 Summary: Dynamic top panel
 
 BuildArch: noarch
 
-License: Apache-2.0 license
+License: M.W.B License
 Group:  Graphical desktop/GNOME
 Url: https://github.com/velade/dynamic-panel.git
 
@@ -31,12 +31,13 @@ cp %_builddir/%nameU-%version/extension.js %buildroot%_datadir/gnome-shell/exten
 cp %_builddir/%nameU-%version/LICENSE %buildroot%_datadir/gnome-shell/extensions/%exID/LICENSE
 cp %_builddir/%nameU-%version/metadata.json %buildroot%_datadir/gnome-shell/extensions/%exID/metadata.json
 cp %_builddir/%nameU-%version/prefs.js %buildroot%_datadir/gnome-shell/extensions/%exID/prefs.js
+cp %_builddir/%nameU-%version/LICENSE %buildroot%_datadir/gnome-shell/extensions/%exID/LICENSE
 
 %files
 %_datadir/gnome-shell/extensions/%exID/*
-%doc *.md
+%doc *.md LICENSE 
 
 %changelog
-* Sat Sep 28 2024 Aleksander Shamaraev <shad@altlinux.ru> 3.5-alt1
+* Mon Sep 30 2024 Aleksander Shamaraev <shad@altlinux.ru> 4.0-alt1
 - Initial build for Sisyphus
 
