@@ -16,8 +16,14 @@ msgstr ""
 "Plura   \n"
 "X-Generator: Gtranslator 46.1\n"
 
-msgid "外觀設定"
-msgstr "Appearance"
+msgid "通用設定"
+msgstr "General"
+
+msgid "懸浮模式"
+msgstr "Floating Mode"
+
+msgid "實體模式"
+msgstr "Solid Mode"
 
 msgid "左側"
 msgstr "Left"
@@ -31,14 +37,14 @@ msgstr "Right"
 msgid "不透明度 (%)"
 msgstr "Opacity (%)"
 
-msgid "選單透明"
-msgstr "Transparent Menus"
+msgid "應用面板樣式到面板選單"
+msgstr "Apply panel style to panel menu"
 
 msgid "面板圓角 (%)"
 msgstr "Border Radius (%)"
 
-msgid "浮動長度 (%)"
-msgstr "Floating Width (%)"
+msgid "面板長度 (%)"
+msgstr "Panel Width (%)"
 
 msgid "頂部邊距 (px)"
 msgstr "Top Margin (px)"
@@ -64,11 +70,44 @@ msgstr "Background Color"
 msgid "前景色"
 msgstr "Foreground Color"
 
-msgid "應用於實體模式"
-msgstr "Apply to entity mode"
-
-msgid "動畫設定"
-msgstr "Animation"
+msgid "應用自訂顏色"
+msgstr "Apply Custom Colors"
 
 msgid "動畫時長 (ms)"
 msgstr "Duration (ms)"
+
+msgid "檢測方式"
+msgstr "Detection Method"
+
+msgid "背景模式"
+msgstr "Background Mode"
+
+msgid "自動長度"
+msgstr "Auto Width"
+
+msgid "實體類型"
+msgstr "Solid Mode Type"
+
+msgid "實體模式保持透明度"
+msgstr "Entity Mode Keep Transparency"
+
+msgid "敬請期待"
+msgstr "Coming Soon"
+
+msgid "靠近"
+msgstr "Window Close"
+
+msgid "僅最大化"
+msgstr "Maximize Only"
+
+msgid "整體"
+msgstr "Overall"
+
+msgid "區域"
+msgstr "Area"
+
+msgid "停靠"
+msgstr "Dock"
+
+msgid "隱藏"
+msgstr "Hide"
