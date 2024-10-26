@@ -13,7 +13,7 @@ When there are no windows near the top panel, it will be in floating mode.
 
 **You can combine various styles as you like, but improper combinations may not produce good visual effects.**
 
-Floating mode only has a translucent effect, no blur effect. Currently, if you want a blur effect, it is recommended to use Blur my shell's static pipeline for the panel. Blur my shell's dynamic mode will not have rounded corners, which is a problem with Blur my shell.
+Floating mode has a translucent effect and a built-in simple blur effect. if you want a more advanced and more controllable blur effect, it is recommended to use Blur my shell's static pipeline for the panel. Blur my shell's dynamic mode will not have rounded corners, which is a problem with Blur my shell.
 ### Blur my shell Settings
 ![Blur my shell Settings](readme_images/bms_settings1.png)
 
@@ -53,6 +53,7 @@ Due to Gnome's own css and gjs, CSS3's transition tweening animation is actually
 # Translation Contributors (in no particular order)
 * [Aleksandr Shamaraev](https://github.com/AlexanderShad) - Russian
 * [Amerey](https://github.com/Amereyeu) - Czech
+* [Ritam Saha](https://github.com/astro-ray) - English(India)
 
 # Special Thanks (in no particular order)
 * **Thanks to Gonzague/Paul Fauchon's Transparent Top Bar (Adjustable transparency) for the idea, the implementation of window proximity detection largely refers to this extension**

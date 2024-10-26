@@ -1,13 +1,12 @@
 import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import Gdk from 'gi://Gdk';
+import Gio from 'gi://Gio';
 import { ExtensionPreferences, gettext as _ } from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 export default class extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         let settings = window._settings = this.getSettings();
-
-        const page = new Adw.PreferencesPage();
 
         const gCommon = new Adw.PreferencesGroup({ title: _("通用設定") });
 
@@ -74,11 +73,26 @@ export default class extends ExtensionPreferences {
             settings.set_boolean('transparent-menus-keep-alpha', state);
         })
         sTransMenuKeepAlpha.set_active(settings.get_boolean('transparent-menus-keep-alpha'));
-        let rowTransMenuKeepAlpha = new Adw.ActionRow({ title: _('    實體模式保持透明度') });
+        let rowTransMenuKeepAlpha = new Adw.ActionRow({ title: "    " + _('實體模式保持透明度') });
         rowTransMenuKeepAlpha.add_suffix(sTransMenuKeepAlpha);
         gCommon.add(rowTransMenuKeepAlpha);
 
         // 自訂顏色
+        // 自動獲取顏色開關
+        let sAutoBG = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
+        sAutoBG.connect('state-set', (sw, state) => {
+            if (state == settings.get_boolean('auto-background')) return;
+            settings.set_boolean('auto-background', state);
+            if (state) {
+                rowDBGColor.visible = false;
+                rowLBGColor.visible = false;
+            } else {
+                rowDBGColor.visible = true;
+                rowLBGColor.visible = true;
+            }
+        })
         // -- 暗黑模式顏色設定
         let cDBGColor = new Gtk.ColorButton();
         cDBGColor.set_use_alpha(false);
@@ -122,7 +136,11 @@ export default class extends ExtensionPreferences {
         rgba.parse(settings.get_string('light-fg-color'));
         cLFGColor.set_rgba(rgba);
 
+        sAutoBG.set_active(settings.get_boolean("auto-background"));
+
         let rowColors = new Adw.ExpanderRow({ title: _('自訂顏色') });
+        let rowAutoBG = new Adw.ActionRow({ title: _("多彩"), subtitle: _("自動從桌布取得顏色") });
+        rowAutoBG.add_suffix(sAutoBG);
         let rowDColors = new Adw.ExpanderRow({ title: _('暗黑模式') });
         let rowDBGColor = new Adw.ActionRow({ title: _('背景色') });
         rowDBGColor.add_suffix(cDBGColor);
@@ -137,6 +155,7 @@ export default class extends ExtensionPreferences {
         rowLFGColor.add_suffix(cLFGColor);
         rowLColors.add_row(rowLBGColor);
         rowLColors.add_row(rowLFGColor);
+        rowColors.add_row(rowAutoBG);
         rowColors.add_row(rowDColors);
         rowColors.add_row(rowLColors);
         gCommon.add(rowColors)
@@ -255,6 +274,19 @@ export default class extends ExtensionPreferences {
         rowTransparent.add_suffix(sTransparent);
         gFloating.add(rowTransparent);
 
+        // 模糊開關
+        let sBlur = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
+        sBlur.connect('state-set', (sw, state) => {
+            if (state == settings.get_boolean('blur')) return;
+            settings.set_boolean('blur', state);
+        })
+        sBlur.set_active(settings.get_boolean('blur'));
+        let rowBlur = new Adw.ActionRow({ title: _('模糊效果') });
+        rowBlur.add_suffix(sBlur);
+        gFloating.add(rowBlur);
+
         // 頂部邊距
         let spTMargin = new Gtk.SpinButton({
             adjustment: new Gtk.Adjustment({
@@ -324,6 +356,51 @@ export default class extends ExtensionPreferences {
         rowColorsUseInStatic.add_suffix(sUseInStatic);
         gSolid.add(rowColorsUseInStatic);
 
+        const gAccessibility = new Adw.PreferencesGroup({ title: _("無障礙設定") });
+        // 盲點補丁
+        let rowTriggers = new Adw.ExpanderRow({ title: _('盲點補丁'), subtitle: _("為懸浮模式添加額外點擊區域，以恢復絕對邊角的點擊能力") });
+        rowTriggers.expanded = true;
+        // -- Left
+        let sAddonTriggerL = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
+        sAddonTriggerL.connect('state-set', (sw, state) => {
+            if (state == settings.get_boolean('addon-trigger-left')) return;
+            settings.set_boolean('addon-trigger-left', state);
+        })
+        sAddonTriggerL.set_active(settings.get_boolean('addon-trigger-left'))
+        let rowAddonTriggerL = new Adw.ActionRow({ title: _('總覽（左）') });
+        rowAddonTriggerL.add_suffix(sAddonTriggerL);
+        rowTriggers.add_row(rowAddonTriggerL);
+
+        // -- Center
+        let sAddonTriggerC = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
+        sAddonTriggerC.connect('state-set', (sw, state) => {
+            if (state == settings.get_boolean('addon-trigger-center')) return;
+            settings.set_boolean('addon-trigger-center', state);
+        })
+        sAddonTriggerC.set_active(settings.get_boolean('addon-trigger-center'))
+        let rowAddonTriggerC = new Adw.ActionRow({ title: _('通知中心（中）') });
+        rowAddonTriggerC.add_suffix(sAddonTriggerC);
+        rowTriggers.add_row(rowAddonTriggerC);
+
+        // -- Right
+        let sAddonTriggerR = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
+        sAddonTriggerR.connect('state-set', (sw, state) => {
+            if (state == settings.get_boolean('addon-trigger-right')) return;
+            settings.set_boolean('addon-trigger-right', state);
+        })
+        sAddonTriggerR.set_active(settings.get_boolean('addon-trigger-right'))
+        let rowAddonTriggerR = new Adw.ActionRow({ title: _('快速設定（右）') });
+        rowAddonTriggerR.add_suffix(sAddonTriggerR);
+        rowTriggers.add_row(rowAddonTriggerR);
+
+        gAccessibility.add(rowTriggers);
+
         // 設定關聯選項
         if (settings.get_boolean('transparent-menus')) {
             rowTransMenuKeepAlpha.sensitive = true;
@@ -341,12 +418,36 @@ export default class extends ExtensionPreferences {
             rowWidth.sensitive = true;
         }
 
+        if (settings.get_boolean('auto-background')) {
+            rowDBGColor.visible = false;
+            rowLBGColor.visible = false;
+        } else {
+            rowDBGColor.visible = true;
+            rowLBGColor.visible = true;
+        }
+
+        // 追加自定義圖標
+        const iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
+        if (!iconTheme.get_search_path().includes(this.path + "/icons")) {
+            iconTheme.add_search_path(this.path + "/icons");
+        }
+
         // 向頁面添加組
-        page.add(gCommon)
-        page.add(gFloating)
-        page.add(gSolid)
+        const pageCommon = new Adw.PreferencesPage({ name: "common", title: _("通用設定"), iconName: `dp-panel-generic-symbolic` });
+        pageCommon.add(gCommon);
+        const pageFloating = new Adw.PreferencesPage({ name: "common", title: _("懸浮模式"), iconName: `dp-panel-floating-symbolic` });
+        pageFloating.add(gFloating);
+        const pageSolid = new Adw.PreferencesPage({ name: "common", title: _("實體模式"), iconName: `dp-panel-solid-symbolic` });
+        pageSolid.add(gSolid);
+        const pageAccessibility = new Adw.PreferencesPage({ name: "common", title: _("無障礙設定"), iconName: `dp-panel-accessibility-symbolic` });
+        pageAccessibility.add(gAccessibility);
 
         // 向窗口添加頁面
-        window.add(page)
+        window.set_search_enabled(true);
+        window.set_default_size(640, 640);
+        window.add(pageCommon);
+        window.add(pageFloating);
+        window.add(pageSolid);
+        window.add(pageAccessibility);
     }
 }

@@ -6,135 +6,135 @@ msgstr ""
 "Project-Id-Version: Dynamic Panel 2.4\n"
 "Report-Msgid-Bugs-To: support@velhlkj.com\n"
 "POT-Creation-Date: 2023-09-07 00:03-0700\n"
-"PO-Revision-Date: 2024-09-07 15:07+0800\n"
+"PO-Revision-Date: 2024-10-11 14:47+0800\n"
 "Last-Translator: Velade <velade48@gmail.com>\n"
 "Language-Team: VELHLKJ <translate@velhlkj.com>\n"
-"Language: zh_TW\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plura   \n"
-"X-Generator: Gtranslator 46.1\n"
+"X-Generator: Gtranslator 47.0\n"
 
 msgid "通用設定"
-msgstr "一般設定"
+msgstr "通用设置"
 
 msgid "懸浮模式"
-msgstr "懸浮模式"
+msgstr "悬浮模式"
 
 msgid "實體模式"
-msgstr "實體模式"
+msgstr "实体模式"
 
 msgid "左側"
-msgstr "左側"
+msgstr "左侧"
 
 msgid "居中"
-msgstr "置中"
+msgstr "居中" 
 
 msgid "右側"
-msgstr "右側"
+msgstr "右侧"
 
 msgid "不透明度 (%)"
 msgstr "不透明度 (%)"
 
 msgid "應用面板樣式到面板選單"
-msgstr "套用面板樣式到面板選單"
+msgstr "应用面板样式到面板菜单" 
 
 msgid "面板圓角 (%)"
-msgstr "面板圓角 (%)"
+msgstr "面板圆角 (%)"
 
 msgid "面板長度 (%)"
-msgstr "面板長度 (%)"
+msgstr "面板长度 (%)"
 
 msgid "頂部邊距 (px)"
-msgstr "上方邊距 (px)" 
+msgstr "顶部边距 (px)" 
 
 msgid "側面邊距 (px)"
-msgstr "側邊邊距 (px)"
+msgstr "侧面边距 (px)"
 
 msgid "對齊方式"
-msgstr "對齊方式"
+msgstr "对齐方式"
 
 msgid "自訂顏色"
-msgstr "自訂顏色"
+msgstr "自定义颜色"
 
 msgid "暗黑模式"
-msgstr "深色模式"
+msgstr "暗黑模式" 
 
 msgid "明亮模式"
 msgstr "明亮模式"
 
 msgid "背景色"
-msgstr "背景顏色"
+msgstr "背景颜色"
 
 msgid "前景色"
-msgstr "前景顏色"
+msgstr "前景色"
 
 msgid "應用自訂顏色"
-msgstr "套用自訂顏色"
+msgstr "应用自定义颜色" 
 
 msgid "動畫時長 (ms)"
-msgstr "動畫長度 (ms)"
+msgstr "动画时长 (ms)" 
 
 msgid "檢測方式"
-msgstr "偵測方式"
+msgstr "检测方式"
 
 msgid "背景模式"
 msgstr "背景模式"
 
 msgid "自動長度"
-msgstr "自動長度"
+msgstr "自动长度"
 
 msgid "實體類型"
-msgstr "實體類型"
+msgstr "实体类型"
 
 msgid "實體模式保持透明度"
-msgstr "實體模式維持透明度"
+msgstr "实体模式保持透明度" 
 
 msgid "敬請期待"
-msgstr "敬請期待"
+msgstr "敬请期待"
 
 msgid "靠近"
-msgstr "視窗靠近"
+msgstr "窗口靠近" 
 
 msgid "僅最大化"
-msgstr "僅限最大化" 
+msgstr "仅最大化" 
 
 msgid "整體"
-msgstr "整體"
+msgstr "整体"
 
 msgid "區域"
-msgstr "區域"
+msgstr "区域"
 
 msgid "停靠"
 msgstr "停靠"
 
 msgid "隱藏"
-msgstr "隱藏"
+msgstr "隐藏"
 
 msgid "多彩"
-msgstr "多色"
+msgstr "多彩"
 
 msgid "自動從桌布取得顏色"
-msgstr "自動從桌面取得顏色" 
+msgstr "自动从壁纸获取颜色" 
 
 msgid "模糊效果"
 msgstr "模糊效果"
 
 msgid "無障礙設定"
-msgstr "無障礙設定"
+msgstr "无障碍设置"
 
 msgid "盲點補丁"
-msgstr "盲點修補"
+msgstr "盲点补丁"
 
 msgid "為懸浮模式添加額外點擊區域，以恢復絕對邊角的點擊能力"
-msgstr "為懸浮模式添加額外點擊區域，以恢復絕對邊角的點擊能力"
+msgstr "为悬浮模式添加额外点击区域，以恢复绝对边角的点击能力"
 
 msgid "總覽（左）"
-msgstr "總覽（左）"
+msgstr "总览（左）"
 
 msgid "通知中心（中）"
 msgstr "通知中心（中）"
 
 msgid "快速設定（右）"
-msgstr "快速設定（右）"
+msgstr "快速设置（右）"

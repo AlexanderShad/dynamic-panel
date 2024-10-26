@@ -13,7 +13,7 @@
 
 **你可以任意組合各種樣式，但不恰當的組合可能不會帶來好的視覺效果。**
 
-懸浮模式僅僅有半透明效果，沒有模糊效果，目前如果想要模糊效果，建議搭配 Blur my shell 對於面板的靜態 pipeline 使用。Blur my shell 動態模式會沒有圓角，這是 Blur my shell 的問題。
+懸浮模式有半透明效果，內建簡易模糊效果，如果想要更高級和細緻的模糊效果，建議搭配 Blur my shell 對於面板的靜態 pipeline 使用。Blur my shell 動態模式會沒有圓角，這是 Blur my shell 的問題。
 ### Blur my shell 設定
 ![Blur my shell 設定](readme_images/bms_settings1.png)
 
@@ -53,6 +53,7 @@
 # 翻譯貢獻者（排名不分先後）
 * [Aleksandr Shamaraev](https://github.com/AlexanderShad) - 俄語 (Russian)
 * [Amerey](https://github.com/Amereyeu) - 捷克語 (Czech)
+* [Ritam Saha](https://github.com/astro-ray) - 英語(印度)
 
 # 特別鳴謝（排名不分先後）
 * **感謝 Gonzague/Paul Fauchon 的 Transparent Top Bar (Adjustable transparency) 的思路，對視窗靠近的判定實現思路大量參考了此擴充功能**

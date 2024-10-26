@@ -1,19 +1,22 @@
-#
-# Velade <velade48@gmail.com>, 2024.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ritam Saha <ritamsaha00@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Panel 2.4\n"
-"Report-Msgid-Bugs-To: support@velhlkj.com\n"
-"POT-Creation-Date: 2023-09-07 00:03-0700\n"
-"PO-Revision-Date: 2024-09-07 15:09+0800\n"
-"Last-Translator: Velade <velade48@gmail.com>\n"
-"Language-Team: VELHLKJ <translate@velhlkj.com>\n"
-"Language: en_US\n"
+"Project-Id-Version: Dynamic Panel 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-07 15:14+0800\n"
+"PO-Revision-Date: 2024-10-19 19:01+0530\n"
+"Last-Translator: Ritam Saha <ritamsaha00@gmail.com>\n"
+"Language-Team: English (India)\n"
+"Language: en_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plura   \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 46.1\n"
 
 msgid "通用設定"
@@ -56,7 +59,7 @@ msgid "對齊方式"
 msgstr "Align"
 
 msgid "自訂顏色"
-msgstr "Custom Colors"
+msgstr "Custom Colours"
 
 msgid "暗黑模式"
 msgstr "Dark Mode"
@@ -65,13 +68,13 @@ msgid "明亮模式"
 msgstr "Light Mode"
 
 msgid "背景色"
-msgstr "Background Color"
+msgstr "Background Colour"
 
 msgid "前景色"
-msgstr "Foreground Color"
+msgstr "Foreground Colours"
 
 msgid "應用自訂顏色"
-msgstr "Apply Custom Colors"
+msgstr "Apply Custom Colours"
 
 msgid "動畫時長 (ms)"
 msgstr "Duration (ms)"
@@ -89,22 +92,22 @@ msgid "實體類型"
 msgstr "Solid Mode Type"
 
 msgid "實體模式保持透明度"
-msgstr "Entity Mode Keep Transparency"
+msgstr "Constant Entity Mode Transparency"
 
 msgid "敬請期待"
 msgstr "Coming Soon"
 
 msgid "靠近"
-msgstr "Window Close"
+msgstr "Window Proximity"
 
 msgid "僅最大化"
 msgstr "Maximize Only"
 
 msgid "整體"
-msgstr "Overall"
+msgstr "Continuous"
 
 msgid "區域"
-msgstr "Area"
+msgstr "Separated"
 
 msgid "停靠"
 msgstr "Dock"
@@ -113,10 +116,10 @@ msgid "隱藏"
 msgstr "Hide"
 
 msgid "多彩"
-msgstr "Multicolored"
+msgstr "Multicoloured" 
 
 msgid "自動從桌布取得顏色"
-msgstr "Automatically get color from wallpaper"
+msgstr "Automatically get colour from wallpaper" 
 
 msgid "模糊效果"
 msgstr "Blur effect"
@@ -134,7 +137,7 @@ msgid "總覽（左）"
 msgstr "Overview (Left)"
 
 msgid "通知中心（中）"
-msgstr "Notification Center (Middle)"
+msgstr "Notification Centre (Middle)"
 
 msgid "快速設定（右）"
 msgstr "Quick Settings (Right)"
