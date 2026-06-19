@@ -1,8 +1,14 @@
 [繁體中文](README.md) | [简体中文](README-cn.md) 
 
+# Indefinite Suspension of Updates Notice: Due to Gnome's disastrous updates and the attitude of the Gnome team—who even fail to test basic touchscreen functionality during major version updates—I have given up using Gnome. Therefore, this Gnome extension will be indefinitely suspended until the Gnome team makes changes that make me want to use Gnome again.
+
 # Dynamic Top Panel
 
 Originally inspired by the floating panel design in KDE Plasma 6, it presents a translucent floating bar effect when there are no windows nearby, and a solid panel style when windows are close. It supports Gnome's dark and light mode switching. You can set custom colors for dark and light modes respectively. And there are more settings!
+
+## Known Issue
+
+GNOME panel experiences brief flickering during workspace transitions or when returning from the overview. This is caused by GNOME forcibly resetting panel styles during these actions. As this is an underlying GNOME behavior, there is currently no external fix available. Therefore, this flickering issue is listed as a known and temporarily unresolvable problem.
 
 ## Floating Mode
 ![Floating Mode](readme_images/transparent.png)
@@ -52,8 +58,10 @@ Due to Gnome's own css and gjs, CSS3's transition tweening animation is actually
 
 # Translation Contributors (in no particular order)
 * [Aleksandr Shamaraev](https://github.com/AlexanderShad) - Russian
+* [Egor Vorontsov](https://github.com/egormanga) - Russian (Corrected and improved)
 * [Amerey](https://github.com/Amereyeu) - Czech
-* [Ritam Saha](https://github.com/astro-ray) - English(India)
+* [Ritam Saha](https://github.com/astro-ray) - English (India)
+* [Marcos](https://github.com/moucho) - Spanish (Spain)
 
 # Special Thanks (in no particular order)
 * **Thanks to Gonzague/Paul Fauchon's Transparent Top Bar (Adjustable transparency) for the idea, the implementation of window proximity detection largely refers to this extension**

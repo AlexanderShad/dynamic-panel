@@ -1,8 +1,14 @@
 [English](README-en.md) | [简体中文](README-cn.md) 
 
+# 無限期暫停更新通知：由於Gnome的敗類更新，以及Gnome團隊的態度，甚至能在大版本更新時連觸摸版的基本功能都不進行測試，本人已經放棄使用Gnome。因此這個Gnome擴展將會無限期停止更新，直到某天Gnome團隊能夠做出改變，以至於讓我重新使用Gnome為止。
+
 # 動態頂部面板
 
 最初靈感來源於 KDE Plasma 6 的懸浮面板的設計，在附近沒有視窗時呈現半透明懸浮條效果，而當視窗靠近時則呈現實色面板的樣式。支援 Gnome 的暗色模式和亮色模式切換。可針對暗色和亮色模式分別設定自訂顏色。還有更多設定！
+
+## 已知問題
+
+GNOME面板在工作區切換或從概觀視圖返回時，會短暫閃爍。這是由於GNOME在這些操作中強制重置面板樣式所致。由於這是GNOME的底層行為，目前無法透過外部方式解決，因此此閃爍問題被列為已知且暫無法修復的問題。
 
 ## 懸浮模式
 ![懸浮模式](readme_images/transparent.png)
@@ -52,8 +58,10 @@
 
 # 翻譯貢獻者（排名不分先後）
 * [Aleksandr Shamaraev](https://github.com/AlexanderShad) - 俄語 (Russian)
+* [Egor Vorontsov](https://github.com/egormanga) - 俄語 (Russian) (修正並改進)
 * [Amerey](https://github.com/Amereyeu) - 捷克語 (Czech)
-* [Ritam Saha](https://github.com/astro-ray) - 英語(印度)
+* [Ritam Saha](https://github.com/astro-ray) - 英語 (印度)
+* [Marcos](https://github.com/moucho) - 西班牙語 (西班牙)
 
 # 特別鳴謝（排名不分先後）
 * **感謝 Gonzague/Paul Fauchon 的 Transparent Top Bar (Adjustable transparency) 的思路，對視窗靠近的判定實現思路大量參考了此擴充功能**

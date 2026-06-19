@@ -1,139 +1,153 @@
-#
 # Velade <velade48@gmail.com>, 2024.
+# Aleksandr Shamaraev <delphicoder@bk.ru>, 2025.
+# Egor Vorontsov <sdoregor@sdore.me>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Dynamic Panel 2.4\n"
 "Report-Msgid-Bugs-To: support@velhlkj.com\n"
 "POT-Creation-Date: 2023-09-07 00:03-0700\n"
-"PO-Revision-Date: 2024-09-15 17:25+1100\n"
-"Last-Translator: Aleksandr Shamaraev <delphicoder@bk.ru>\n"
-"Language-Team: Aleksandr Shamaraev <delphicoder@bk.ru>\n"
+"PO-Revision-Date: 2025-04-10 02:36+0300\n"
+"Last-Translator: Egor Vorontsov <sdoregor@sdore.me>\n"
+"Language-Team: Russian\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Gtranslator 48.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
-msgid "通用設定"
-msgstr "Общие настройки"
+msgid "General"
+msgstr "Общие"
 
-msgid "懸浮模式"
+msgid "Floating Mode"
 msgstr "Плавающий режим"
 
-msgid "實體模式"
+msgid "Solid Mode"
 msgstr "Сплошной режим"
 
-msgid "左側"
+msgid "Left"
 msgstr "Слева"
 
-msgid "居中"
+msgid "Center"
 msgstr "По центру"
 
-msgid "右側"
+msgid "Right"
 msgstr "Справа"
 
-msgid "不透明度 (%)"
+msgid "Opacity (%)"
 msgstr "Непрозрачность (%)"
 
-msgid "應用面板樣式到面板選單"
+msgid "Apply panel style to panel menu"
 msgstr "Применить стиль панели к меню панели"
 
-msgid "面板圓角 (%)"
+msgid "Border Radius (%)"
 msgstr "Скругление углов (%)"
 
-msgid "面板長度 (%)"
+msgid "Panel Width (%)"
 msgstr "Ширина панели (%)"
 
-msgid "頂部邊距 (px)"
-msgstr "Верхнее поле (px)"
+msgid "Top Margin (px)"
+msgstr "Отступ сверху (px)"
 
-msgid "側面邊距 (px)"
-msgstr "Боковое поле (px)"
+msgid "Side Margin (px)"
+msgstr "Отступ сбоку (px)"
 
-msgid "對齊方式"
+msgid "Align"
 msgstr "Выравнивание"
 
-msgid "自訂顏色"
-msgstr "Настраиваемые цвета"
+msgid "Custom Colors"
+msgstr "Пользовательские цвета"
 
-msgid "暗黑模式"
-msgstr "Темный режим"
+msgid "Dark Mode"
+msgstr "Тёмный режим"
 
-msgid "明亮模式"
+msgid "Light Mode"
 msgstr "Светлый режим"
 
-msgid "背景色"
+msgid "Background Color"
 msgstr "Цвет фона"
 
-msgid "前景色"
+msgid "Foreground Color"
 msgstr "Цвет переднего плана"
 
-msgid "應用自訂顏色"
+msgid "Apply Custom Colors"
 msgstr "Применить пользовательские цвета"
 
-msgid "動畫時長 (ms)"
+msgid "Duration (ms)"
 msgstr "Продолжительность (ms)"
 
-msgid "檢測方式"
+msgid "Detection Method"
 msgstr "Метод обнаружения"
 
-msgid "背景模式"
-msgstr "Фоновый режим"
+msgid "Background Mode"
+msgstr "Режим фона"
 
-msgid "自動長度"
+msgid "Auto Width"
 msgstr "Автоматическая длина"
 
-msgid "實體類型"
-msgstr "Тип объекта"
+msgid "Solid Mode Type"
+msgstr "Тип сплошного режима"
 
-msgid "實體模式保持透明度"
-msgstr "Сохранять прозрачность в сплошном режиме"
+# Keep menu transparency in Solid Mode
+msgid "Entity Mode Keep Transparency"
+msgstr "Сохранять прозрачность меню в сплошном режиме"
 
-msgid "敬請期待"
-msgstr "Ожидайте"
+# In development
+msgid "Coming Soon"
+msgstr "В разработке"
 
-msgid "靠近"
-msgstr "Закрыть окно"
+msgid "Window Close"
+msgstr "Окно поблизости"
 
-msgid "僅最大化"
-msgstr "Только максимизировать"
+msgid "Maximize Only"
+msgstr "Развёрнутое окно"
 
-msgid "整體"
-msgstr "Весь"
+# Entire panel
+msgid "Overall"
+msgstr "Вся панель"
 
-msgid "區域"
-msgstr "Область"
+# Areas only
+msgid "Area"
+msgstr "Только области"
 
-msgid "停靠"
+msgid "Dock"
 msgstr "Пристыковать"
 
-msgid "隱藏"
+msgid "Hide"
 msgstr "Скрыть"
 
-msgid "多彩"
-msgstr "Разноцветный"
+# Dynamic color
+msgid "Multicolored"
+msgstr "Динамический цвет"
 
-msgid "自動從桌布取得顏色"
+msgid "Automatically get color from wallpaper"
 msgstr "Автоматически получать цвет из обоев"
 
-msgid "模糊效果"
+msgid "Blur effect"
 msgstr "Размытие"
 
-msgid "無障礙設定"
-msgstr "Настройки доступности"
+msgid "Accessibility"
+msgstr "Доступность"
 
-msgid "盲點補丁"
-msgstr "Простое исправление кликов"
+# Easing of clicks
+msgid "Easy Click Fix"
+msgstr "Упрощение нажатий"
 
-msgid "為懸浮模式添加額外點擊區域，以恢復絕對邊角的點擊能力"
-msgstr "Добавить дополнительные области нажатия для режима зависания, чтобы восстановить возможность нажатия на абсолютные углы"
+# …at display corners
+msgid ""
+"Add extra clickable areas for hover mode to restore clickability at absolute "
+"corners"
+msgstr ""
+"Добавить дополнительные зоны для нажатий в плавающем режиме, чтобы вернуть "
+"возможность нажатия по углам экрана"
 
-msgid "總覽（左）"
+msgid "Overview (Left)"
 msgstr "Обзор (слева)"
 
-msgid "通知中心（中）"
+msgid "Notification Center (Middle)"
 msgstr "Центр уведомлений (в центре)"
 
-msgid "快速設定（右）"
+msgid "Quick Settings (Right)"
 msgstr "Быстрые настройки (справа)"

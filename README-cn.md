@@ -1,8 +1,14 @@
 [繁體中文](README.md) | [English](README-en.md) 
 
+# 无限期暂停更新通知：由于Gnome的败类更新，以及Gnome团队的态度，甚至能在大版本更新时连触摸版的基本功能都不进行测试，本人已经放弃使用Gnome。因此这个Gnome扩展将会无限期停止更新，直到某天Gnome团队能够做出改变，以至于让我重新使用Gnome为止。
+
 # 动态顶部面板
 
 最初灵感来源于 KDE Plasma 6 的悬浮面板的设计，在附近没有窗口时呈现半透明悬浮条效果，而当窗口靠近时则呈现实色面板的样式。支持 Gnome 的暗色模式和亮色模式切换。可针对暗色和亮色模式分别设定自定义颜色。还有更多设置！
+
+## 已知问题
+
+GNOME面板在工作区切换或从概览视图返回时，会短暂闪烁。这是由于GNOME在这些操作中强制重置面板样式所致。由于这是GNOME的底层行为，目前无法通过外部方式解决，因此此闪烁问题被列为已知且暂无法修复的问题。
 
 ## 悬浮模式
 ![悬浮模式](readme_images/transparent.png)
@@ -52,8 +58,10 @@
 
 # 翻译贡献者（排名不分先后）
 * [Aleksandr Shamaraev](https://github.com/AlexanderShad) - 俄语 (Russian)
+* [Egor Vorontsov](https://github.com/egormanga) - 俄語 (Russian) (修正并改进)
 * [Amerey](https://github.com/Amereyeu) - 捷克语 (Czech)
 * [Ritam Saha](https://github.com/astro-ray) - 英文(印度)
+* [Marcos](https://github.com/moucho) - 西班牙语 (西班牙)
 
 # 特别鸣谢（排名不分先后）
 * **感谢 Gonzague/Paul Fauchon 的 Transparent Top Bar (Adjustable transparency) 的思路，对窗口靠近的判定实现思路大量参考了此扩展功能**
